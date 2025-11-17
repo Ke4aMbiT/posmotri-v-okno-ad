@@ -1,1 +1,1 @@
-https://github.com/Ke4aMbiT/ono-tebe-nado-ad
+https://github.com/Ke4aMbiT/posmotri-v-okno-ad
