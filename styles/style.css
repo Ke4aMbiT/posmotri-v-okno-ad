@@ -45,7 +45,7 @@ ol {
   gap: 30px;
 }
 
-/* Блок вывода выбранного видео и формы поиска */
+
 .result {
   display: flex;
   flex-direction: column;
@@ -100,7 +100,7 @@ ol {
   inline-size: fit-content;
 }
 
-.visually-hidden { /* скрываем дефолтные элементы */
+.visually-hidden {
   position: absolute;
   inline-size: 1px;
   block-size: 1px;
@@ -134,11 +134,6 @@ ol {
   outline: none;
 }
 
-/* Согласно документации https://www.w3.org/TR/selectors-4/#the-focus-visible-pseudo 
-поведение псевдокласса :focus-visible для некоторых элементов, включая input,
-не может быть осуществлено таким образом, как задумано в брифе.
-Браузерные настройки некоторых браузеров все равно будут выставлять рамку для
-:focus-visible при клике мышью или тачпадом.  */
 .search-form__label:has(.search-form__textfield:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -149,7 +144,7 @@ ol {
   border-left: 1px solid #fff;
 }
 
-.search-form__pseudo-checkbox { /* блок с чебоксами */
+.search-form__pseudo-checkbox {
   cursor: pointer;
   display: block;
   inline-size: 19px;
@@ -211,7 +206,7 @@ ol {
   outline-offset: 1px;
 }
 
-/* Блок вывода списка видео */
+
 .content__details {
   block-size: 100%;
   inline-size: 100%;
@@ -242,7 +237,7 @@ ol {
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
-  scrollbar-width: none; /* изменен дефолтный скролл */
+  scrollbar-width: none; 
 }
 
 .content__list-item:not(:last-child) {
@@ -312,7 +307,7 @@ ol {
   padding: 6px 146px;
 }
 
-/* Добавила отступы для обводки кнопки со всех сторон */
+
 .more-button:focus-visible {
   margin: 2px;
   padding: 6px 140px;
